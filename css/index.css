@@ -237,3 +237,42 @@
   color: white;
   font-weight: bold;
 }
+
+.footer {
+  margin-top: 730px;
+  height: 300px;
+  background-color: #25252d;
+  font-family: 'Ubuntu',sans-serif;
+  position: relative;
+  border-top-right-radius: 100px;
+}
+
+.footer__logo {
+  position: absolute;
+  left: 10vw;
+  top: 50px;
+}
+
+.footer__nav {
+  position: absolute;
+  left: 22vw;
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 65px;
+}
+
+.footer__nav__ul {
+  list-style: none;
+}
+
+.footer__nav__ul__title {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.footer__nav__ul__li {
+  color: #c8c8cb;
+  margin: 0.8em 0;
+}

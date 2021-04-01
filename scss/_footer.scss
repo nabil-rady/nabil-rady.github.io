@@ -1,0 +1,33 @@
+.footer{
+    margin-top:730px;
+    height: 300px;
+    background-color: $footer-background;
+    font-family: 'Ubuntu',sans-serif;
+    position: relative;
+    border-top-right-radius:100px ;
+    &__logo{
+        position:absolute;
+        left:10vw;
+        top:50px
+    }
+    &__nav{
+        position:absolute;
+        left:22vw;
+        width: 75%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top:65px;
+        &__ul{
+            list-style: none;
+            &__title{
+                color: white;
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+            }
+            &__li{
+                color:$footer-text;
+                margin:0.8em 0;
+            }
+        }
+    }
+}
