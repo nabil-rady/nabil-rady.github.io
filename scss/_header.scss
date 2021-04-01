@@ -1,0 +1,78 @@
+.header{
+    font-family: 'Ubuntu',sans-serif;
+    background-image: url("../images/bg-pattern-intro.svg"),
+                      linear-gradient(to right,$gradient-orange,50%,$gradient-red);
+    background-position: 28% 51%;
+    height: 500px;
+    border-bottom-left-radius:70px;
+    &__nav{
+        position: relative;
+        padding-top: 40px;
+        margin-left: 10vw;
+        display: flex;
+        &__title{
+            color:white;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        &__ul{
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            &__li{
+                color: white;
+                font-size: 1rem;
+                margin:0 1em;
+                padding-top:0.8rem;
+            }
+        }
+        &__login-and-signup{
+            position: absolute;
+            right:7vw;
+            display: flex;
+            align-items: flex-start;
+        }   
+    }
+    &__title{
+        font-family: 'Ubuntu',sans-serif;
+        text-align: center;
+        color:white;
+        padding-top:105px;
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+    &__slogan{
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+        padding-top:30px;
+    }
+    &__buttons{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        &__start{
+            width: 135px;
+            height: 28px;
+            background-color: white;
+            color:$text-red;
+            padding-top:0.5em;
+            margin:6px 1em 0 1em;
+            text-align: center;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        &__learn{
+            width: 135px;
+            height: 28px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            padding-top:0.5em;
+            margin-top:6px;
+            border:1px white solid;
+            border-radius: 20px;
+        }
+    }
+}

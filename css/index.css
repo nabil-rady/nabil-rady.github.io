@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+}
+
+.header {
+  font-family: 'Ubuntu',sans-serif;
+  background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, 50%, #ff3d54);
+  background-position: 28% 51%;
+  height: 500px;
+  border-bottom-left-radius: 70px;
+}
+
+.header__nav {
+  position: relative;
+  padding-top: 40px;
+  margin-left: 10vw;
+  display: flex;
+}
+
+.header__nav__title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header__nav__ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__nav__ul__li {
+  color: white;
+  font-size: 1rem;
+  margin: 0 1em;
+  padding-top: 0.8rem;
+}
+
+.header__nav__login-and-signup {
+  position: absolute;
+  right: 7vw;
+  display: flex;
+  align-items: flex-start;
+}
+
+.header__title {
+  font-family: 'Ubuntu',sans-serif;
+  text-align: center;
+  color: white;
+  padding-top: 105px;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.header__slogan {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.header__buttons {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding-top: 30px;
+}
+
+.header__buttons__start {
+  width: 135px;
+  height: 28px;
+  background-color: white;
+  color: #ff525d;
+  padding-top: 0.5em;
+  margin: 6px 1em 0 1em;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.header__buttons__learn {
+  width: 135px;
+  height: 28px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding-top: 0.5em;
+  margin-top: 6px;
+  border: 1px white solid;
+  border-radius: 20px;
+}
+
+.first-section {
+  font-family: 'Overpass',sans-serif;
+  padding-top: 190px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.first-section__background {
+  position: absolute;
+  right: -350px;
+  top: 120px;
+  opacity: 0.9;
+}
+
+.first-section__title {
+  margin-bottom: 110px;
+  text-align: center;
+  color: #1f3f5b;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.first-section__subtitle {
+  margin: 30px 0;
+  margin-left: 60px;
+  color: #1f3f5b;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.first-section__paragraph {
+  color: #4b5862;
+  line-height: 1.8;
+  margin-left: 60px;
+  margin-bottom: 100px;
+  width: 40%;
+  font-size: 1.1rem;
+}
+
+.second-section {
+  position: relative;
+  background-image: linear-gradient(to right, #2c2d3f, 40%, #3f4164);
+  height: 350px;
+  border-radius: 0 85px 0 85px;
+}
+
+.second-section__background-phones {
+  position: absolute;
+  left: 5vw;
+  top: -70px;
+  z-index: 1;
+}
+
+.second-section__background-circles {
+  position: absolute;
+  object-fit: contain;
+  left: 5vw;
+  top: -70px;
+  z-index: 0;
+}
+
+.second-section__body {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  margin-top: 80px;
+  color: white;
+  font-family: 'Overpass',sans-serif;
+}
+
+.second-section__body__subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1em 0;
+}
+
+.second-section__body__paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  color: white;
+}
+
+.second-section::before {
+  content: '';
+  position: absolute;
+  left: -220px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 0% -580px;
+  opacity: 0.6;
+}
+
+.third-section {
+  padding-top: 280px;
+  position: relative;
+}
+
+.third-section__background {
+  position: absolute;
+  left: -280px;
+  top: 50%;
+}
+
+.third-section__body {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  margin-top: 80px;
+  font-family: 'Overpass',sans-serif;
+}
+
+.third-section__body__subtitle {
+  color: #1f3f5b;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1em 0;
+}
+
+.third-section__body__paragraph {
+  color: #4b5862;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.signup {
+  width: 120px;
+  height: 30px;
+  background-color: white;
+  color: #ff525d;
+  padding-top: 0.5em;
+  margin: 0 2.5em;
+  margin-top: 6px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.login {
+  padding-top: 0.85rem;
+  color: white;
+  font-weight: bold;
+}
