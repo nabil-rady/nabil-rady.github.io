@@ -410,6 +410,7 @@ body, html {
     margin-top: 80px;
     position: static;
     height: fit-content;
+    height: -moz-max-content;
   }
   .footer__logo {
     display: block;
