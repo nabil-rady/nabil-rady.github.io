@@ -316,6 +316,7 @@ body, html {
   .first-section {
     position: static;
     margin-bottom: 150px;
+    padding-top: 140px;
   }
   .first-section__background {
     display: none;
@@ -325,6 +326,9 @@ body, html {
     position: static;
     width: 90%;
     margin: 50px auto;
+  }
+  .first-section__title {
+    margin-bottom: 25px;
   }
   .first-section__subtitle {
     text-align: center;
@@ -376,7 +380,7 @@ body, html {
     padding-bottom: 170px;
   }
   .third-section {
-    padding-top: 140px;
+    padding-top: 60px;
   }
   .third-section__background {
     position: static;

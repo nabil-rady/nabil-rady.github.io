@@ -15,6 +15,7 @@
     .first-section{
         position: static;
         margin-bottom: 150px;
+        padding-top:140px;
         &__background{
             display: none;
             &.mobile{
@@ -23,6 +24,9 @@
                 width: 90%;
                 margin:50px auto;
             }
+        }
+        &__title{
+            margin-bottom: 25px;
         }
         &__subtitle{
             text-align: center;
@@ -75,7 +79,7 @@
         }
     }
     .third-section{
-        padding-top: 140px;
+        padding-top: 60px;
         &__background{
             position: static;
             display: none;
