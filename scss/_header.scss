@@ -1,4 +1,5 @@
 .header{
+    width: 100vw;
     font-family: 'Ubuntu',sans-serif;
     background-image: url("../images/bg-pattern-intro.svg"),
                       linear-gradient(to right,$gradient-orange,50%,$gradient-red);
@@ -8,7 +9,7 @@
     &__nav{
         position: relative;
         padding-top: 40px;
-        margin-left: 10vw;
+        margin-left: 8vw;
         display: flex;
         &__title{
             color:white;
@@ -31,6 +32,17 @@
             right:7vw;
             display: flex;
             align-items: flex-start;
+        }
+        &__burgers{
+            position: absolute;
+            right:5vw;
+            display: none;
+            &__burger{
+                width: 20px;
+                height: 2px;
+                margin:3px 0;
+                background-color: white;
+            }
         }   
     }
     &__title{

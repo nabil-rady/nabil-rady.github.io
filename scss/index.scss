@@ -4,6 +4,11 @@
     margin:0;
 }
 
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
 @import 'header';
 
 .first-section{
@@ -18,8 +23,11 @@
     &__background{
         position: absolute;
         right:-350px;
-        top:120px;
+        top:100px;
         opacity: 0.9;
+        &.mobile{
+            display: none;
+        }
     }
     &__title{
         // margin-top: 50px;
@@ -61,7 +69,6 @@
     }
     &__background-circles{
         position: absolute;
-        object-fit: contain;
         left:5vw;
         top:-70px;
         z-index:0;
@@ -105,11 +112,14 @@
         position: absolute;
         left:-280px;
         top:50%;
+        &.mobile{
+            display: none;
+        }
     }
     &__body{
         position: absolute;
-        width: 50%;
-        left: 50%;  
+        width: 40%;
+        left: 60%;  
         margin-top: 80px;
         font-family: 'Overpass',sans-serif;
         &__subtitle{
@@ -146,3 +156,5 @@
 }
 
 @import 'footer';
+
+@import 'responsive';

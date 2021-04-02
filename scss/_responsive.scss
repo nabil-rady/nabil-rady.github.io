@@ -1,0 +1,142 @@
+@media (max-width:1170px){
+    .header{
+        &__nav{
+            &__ul{
+                display: none;
+            }
+            &__login-and-signup{
+                display: none;
+            }
+            &__burgers{
+                display: block;
+            }
+        }
+    }
+    .first-section{
+        position: static;
+        margin-bottom: 150px;
+        &__background{
+            display: none;
+            &.mobile{
+                display: block;
+                position: static;
+                width: 90%;
+                margin:50px auto;
+            }
+        }
+        &__subtitle{
+            text-align: center;
+            margin:30px auto;
+            font-size:2.2rem;
+            font-weight: 700;
+        }
+        &__paragraph{
+            text-align: center;
+            margin:0 auto 100px auto;
+            font-size: 1.2rem;
+        }
+    }
+    .second-section{
+        background-image: linear-gradient(to bottom right,$gradient-gray-blue,40%,$gradient-desaturated-blue);
+        border-radius: 0 150px 0 150px;
+        height: auto;
+        &__background-phones{
+            max-width: 500px;
+            width: 95vw;
+            top:-200px;
+            left:calc(50% - 250px);
+        }
+        &::before{
+            opacity: 1;
+            border-radius: 0 150px 0 150px;
+            top:0;
+            left:0;
+            background-position: 50% -570px;
+        }
+        &__body{
+            width: 90%;
+            position: static;
+            padding-top: 300px;
+            margin:0 auto;
+            &__subtitle{
+                text-align: center;
+                width: 100%;
+                margin: 0 auto; 
+                font-size: 2.2rem;
+                font-weight: 500;
+            }
+            &__paragraph{
+                font-size: 1.2rem;
+                text-align: center;
+                margin: 0 auto; 
+                padding:2em;
+                padding-bottom: 170px;
+            }
+        }
+    }
+    .third-section{
+        padding-top: 140px;
+        &__background{
+            position: static;
+            display: none;
+            &.mobile{
+                display: block;
+                width: 100%;
+            }
+        }
+        &__body{
+            position: static;
+            padding: 1vw;
+            width: 90%;
+            margin:0 auto;
+            margin-top: 0;
+            &__subtitle{
+                text-align: center;
+                font-size: 2.2rem;
+            }
+            &__paragraph{
+                text-align: center;
+                width: 90%;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .footer{
+        margin-top:80px;
+        position: static;
+        height: fit-content;
+        &__logo{
+            display: block;
+            position: static;
+            margin:0 auto;
+            padding-top: 100px;
+            width: 150px;
+        }
+        &__nav{
+            position: static;
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            &__ul{
+                padding:50px 0 0 0;
+                margin:0 auto;
+                text-align: center;
+                &__title{
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+                &__li{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width:580px) {
+    .second-section{
+        &__background-phones{
+            left: calc(50% - 46.5vw);
+            top: -35vw;   
+        }
+    }
+}
