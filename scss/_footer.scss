@@ -27,6 +27,10 @@
             &__li{
                 color:$footer-text;
                 margin:0.8em 0;
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
             }
         }
     }

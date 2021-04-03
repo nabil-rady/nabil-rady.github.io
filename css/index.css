@@ -9,7 +9,7 @@ body, html {
 
 .header {
   width: 100vw;
-  font-family: 'Ubuntu',sans-serif;
+  font-family: 'Overpass',sans-serif;
   background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, 50%, #ff3d54);
   background-position: 28% 51%;
   height: 500px;
@@ -37,9 +37,18 @@ body, html {
 
 .header__nav__ul__li {
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0 1em;
   padding-top: 0.8rem;
+}
+
+.header__nav__ul__li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header__nav__ul__li:hover > .arrow {
+  transform: rotate(180deg);
 }
 
 .header__nav__login-and-signup {
@@ -97,6 +106,12 @@ body, html {
   font-weight: bold;
 }
 
+.header__buttons__start:hover {
+  background-color: #ff7a85;
+  color: white;
+  cursor: pointer;
+}
+
 .header__buttons__learn {
   width: 135px;
   height: 28px;
@@ -107,6 +122,41 @@ body, html {
   margin-top: 6px;
   border: 1px white solid;
   border-radius: 20px;
+}
+
+.header__buttons__learn:hover {
+  background-color: white;
+  color: #ff525d;
+  cursor: pointer;
+}
+
+.signup {
+  width: 120px;
+  height: 28px;
+  background-color: white;
+  color: #ff525d;
+  padding-top: 0.5em;
+  margin: 0 2.5em;
+  margin-top: 6px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.signup:hover {
+  background-color: #ff7a85;
+  color: white;
+  cursor: pointer;
+}
+
+.login {
+  padding-top: 0.85rem;
+  color: white;
+  font-weight: bold;
+}
+
+.login:hover {
+  cursor: pointer;
 }
 
 .first-section {
@@ -245,25 +295,6 @@ body, html {
   font-weight: 400;
 }
 
-.signup {
-  width: 120px;
-  height: 30px;
-  background-color: white;
-  color: #ff525d;
-  padding-top: 0.5em;
-  margin: 0 2.5em;
-  margin-top: 6px;
-  text-align: center;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
-.login {
-  padding-top: 0.85rem;
-  color: white;
-  font-weight: bold;
-}
-
 .footer {
   margin-top: 730px;
   height: 300px;
@@ -301,6 +332,11 @@ body, html {
 .footer__nav__ul__li {
   color: #c8c8cb;
   margin: 0.8em 0;
+}
+
+.footer__nav__ul__li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (max-width: 1170px) {

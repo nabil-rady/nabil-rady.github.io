@@ -1,6 +1,6 @@
 .header{
     width: 100vw;
-    font-family: 'Ubuntu',sans-serif;
+    font-family: 'Overpass',sans-serif;
     background-image: url("../images/bg-pattern-intro.svg"),
                       linear-gradient(to right,$gradient-orange,50%,$gradient-red);
     background-position: 28% 51%;
@@ -22,9 +22,16 @@
             justify-content: flex-start;
             &__li{
                 color: white;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 margin:0 1em;
                 padding-top:0.8rem;
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+                &:hover > .arrow{
+                    transform:rotate(180deg);
+                }
             }
         }
         &__login-and-signup{
@@ -74,6 +81,11 @@
             text-align: center;
             border-radius: 20px;
             font-weight: bold;
+            &:hover{
+                background-color: $highlight-red;
+                color:white;
+                cursor: pointer;
+            }
         }
         &__learn{
             width: 135px;
@@ -85,6 +97,38 @@
             margin-top:6px;
             border:1px white solid;
             border-radius: 20px;
+            &:hover{
+                background-color: white;
+                color:$text-red;
+                cursor: pointer;
+            }
         }
+    }
+}
+
+.signup{
+    width: 120px;
+    height: 28px;
+    background-color: white;
+    color:$text-red;
+    padding-top:0.5em;
+    margin:0 2.5em;
+    margin-top:6px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    &:hover{
+        background-color: $highlight-red;
+        color:white;
+        cursor: pointer;
+    }
+}
+
+.login{
+    padding-top: 0.85rem;
+    color: white;
+    font-weight: bold;
+    &:hover{
+        cursor: pointer;
     }
 }
