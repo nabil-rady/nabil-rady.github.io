@@ -8,7 +8,7 @@ body, html {
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
   font-family: 'Overpass',sans-serif;
   background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, 50%, #ff3d54);
   background-position: 28% 51%;
