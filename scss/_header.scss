@@ -25,11 +25,12 @@
                 font-size: 1.1rem;
                 margin:0 1em;
                 padding-top:0.8rem;
-                &:hover{
+                position:relative;
+                &:hover,&.focused{
                     cursor: pointer;
                     text-decoration: underline;
                 }
-                &:hover > .arrow{
+                @at-root .rotate{
                     transform:rotate(180deg);
                 }
             }
@@ -82,6 +83,7 @@
             border-radius: 20px;
             font-weight: bold;
             &:hover{
+                transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
                 background-color: $highlight-red;
                 color:white;
                 cursor: pointer;
@@ -98,6 +100,7 @@
             border:1px white solid;
             border-radius: 20px;
             &:hover{
+                transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
                 background-color: white;
                 color:$text-red;
                 cursor: pointer;
@@ -118,6 +121,7 @@
     border-radius: 20px;
     font-weight: bold;
     &:hover{
+        transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
         background-color: $highlight-red;
         color:white;
         cursor: pointer;
@@ -130,5 +134,31 @@
     font-weight: bold;
     &:hover{
         cursor: pointer;
+    }
+}
+
+.menu{
+    font-family: 'Ubuntu',sans-serif;
+    position: absolute;
+    left:-20px;
+    top:45px;
+    width: 150px;
+    height: 150px;
+    border-radius: 7px;
+    background-color: white;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: default;
+    &__item{
+        margin-left:20px;
+        &:hover{
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+    &.hidden{
+        opacity: 0;
     }
 }

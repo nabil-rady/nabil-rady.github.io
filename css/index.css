@@ -40,14 +40,15 @@ body, html {
   font-size: 1.1rem;
   margin: 0 1em;
   padding-top: 0.8rem;
+  position: relative;
 }
 
-.header__nav__ul__li:hover {
+.header__nav__ul__li:hover, .header__nav__ul__li.focused {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.header__nav__ul__li:hover > .arrow {
+.rotate {
   transform: rotate(180deg);
 }
 
@@ -107,6 +108,7 @@ body, html {
 }
 
 .header__buttons__start:hover {
+  transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
   background-color: #ff7a85;
   color: white;
   cursor: pointer;
@@ -125,6 +127,7 @@ body, html {
 }
 
 .header__buttons__learn:hover {
+  transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
   background-color: white;
   color: #ff525d;
   cursor: pointer;
@@ -144,6 +147,7 @@ body, html {
 }
 
 .signup:hover {
+  transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
   background-color: #ff7a85;
   color: white;
   cursor: pointer;
@@ -157,6 +161,35 @@ body, html {
 
 .login:hover {
   cursor: pointer;
+}
+
+.menu {
+  font-family: 'Ubuntu',sans-serif;
+  position: absolute;
+  left: -20px;
+  top: 45px;
+  width: 150px;
+  height: 150px;
+  border-radius: 7px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: default;
+}
+
+.menu__item {
+  margin-left: 20px;
+}
+
+.menu__item:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu.hidden {
+  opacity: 0;
 }
 
 .first-section {
