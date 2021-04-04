@@ -1,24 +1,45 @@
 const [product,company,overview] = document.querySelectorAll('.header__nav__ul__li');
 const headerNav = document.querySelector('.header__nav__ul');
-const rotateArrow = event =>{
-    if (event.target.matches('.header__nav__ul__li')){
-        const listElements = document.querySelectorAll('.header__nav__ul__li');
-        const listElementArrows = document.querySelectorAll('.arrow');
-        const targetElementArrow = event.target.children[0];
-        const menus = document.querySelectorAll('.menu');
+const clickOutsideMenu = event => !( event.target.matches('.menu') || event.target.parentNode && event.target.parentNode.matches('.menu') ) ;
+const clickOnNavItem = event => event.target.matches('.header__nav__ul__li');
+const showMenu = event =>{
+    event = event || window.event;
+    if (clickOnNavItem(event)){
         const targetMenu = event.target.children[1];
-        for (let i=0;i<menus.length;i++){;
-            if (!menus[i].matches('.menu.hidden')){
-                menus[i].classList.add('hidden');
-                listElementArrows[i].classList.remove('rotate');
-                listElements[i].classList.remove('focused');
-                break;
-            }
+        const targetElementArrow = event.target.children[0];
+        if (targetMenu.classList.contains('visible')){
+            targetMenu.classList.remove('visible');
+            targetElementArrow.classList.remove('rotate');
+            event.target.classList.remove('focused');
         }
-        console.log(targetMenu);
-        targetMenu.classList.toggle('hidden');
-        targetElementArrow.classList.toggle('rotate');
-        event.target.classList.toggle('focused');
+        else{
+            const activeMenu = document.querySelector('.menu.visible');
+            if (activeMenu){
+                const activeElementArrow = document.querySelector('.arrow.rotate');
+                const activeListElement = document.querySelector('.focused');
+                activeMenu.classList.remove('visible');
+                activeElementArrow.classList.remove('rotate');
+                activeListElement.classList.remove('focused');
+            }
+            targetMenu.classList.add('visible');
+            targetElementArrow.classList.add('rotate');
+            event.target.classList.add('focused');
+        }
     }
 };
-headerNav.addEventListener('click',rotateArrow);
+
+const hideMenu = event =>{
+    event = event || window.event;
+    if(clickOutsideMenu(event) && !clickOnNavItem(event)){
+        const activeMenu = document.querySelector('.menu.visible');
+        if (activeMenu){
+            const activeElementArrow = document.querySelector('.arrow.rotate');
+            const activeListElement = document.querySelector('.focused');
+            activeMenu.classList.remove('visible');
+            activeElementArrow.classList.remove('rotate');
+            activeListElement.classList.remove('focused');
+        }
+    }
+};
+headerNav.addEventListener('click', showMenu);
+document.addEventListener('click', hideMenu);

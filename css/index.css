@@ -67,8 +67,8 @@ body, html {
 
 .header__nav__burgers__burger {
   width: 20px;
-  height: 2px;
-  margin: 3px 0;
+  height: 4px;
+  margin: 5px 0;
   background-color: white;
 }
 
@@ -176,7 +176,10 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  opacity: 0;
+  visibility: hidden;
   cursor: default;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu__item {
@@ -188,8 +191,9 @@ body, html {
   font-weight: bold;
 }
 
-.menu.hidden {
-  opacity: 0;
+.menu.visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .first-section {
