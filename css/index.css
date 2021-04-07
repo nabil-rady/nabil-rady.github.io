@@ -112,6 +112,7 @@ body, html {
   left: -2px;
   width: 25px;
   height: 15px;
+  cursor: pointer;
 }
 
 .header__title {
@@ -644,5 +645,5 @@ body, html {
 }
 
 .mobile-menu__item {
-  margin: 5px 0;
+  margin: 12px 0;
 }
