@@ -119,8 +119,8 @@
             text-align: center;
             border-radius: 20px;
             font-weight: bold;
+            transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
             &:hover{
-                transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
                 background-color: $highlight-red;
                 color:white;
                 cursor: pointer;
@@ -136,8 +136,8 @@
             margin-top:6px;
             border:1px white solid;
             border-radius: 20px;
+            transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
             &:hover{
-                transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
                 background-color: white;
                 color:$text-red;
                 cursor: pointer;
@@ -157,8 +157,8 @@
     text-align: center;
     border-radius: 20px;
     font-weight: bold;
+    transition: color  0.3s ease-in-out,background-color 0.3s ease-in-out;
     &:hover{
-        transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
         background-color: $highlight-red;
         color:white;
         cursor: pointer;

@@ -148,10 +148,10 @@ body, html {
   text-align: center;
   border-radius: 20px;
   font-weight: bold;
+  transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
 }
 
 .header__buttons__start:hover {
-  transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
   background-color: #ff7a85;
   color: white;
   cursor: pointer;
@@ -167,10 +167,10 @@ body, html {
   margin-top: 6px;
   border: 1px white solid;
   border-radius: 20px;
+  transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
 }
 
 .header__buttons__learn:hover {
-  transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
   background-color: white;
   color: #ff525d;
   cursor: pointer;
@@ -187,10 +187,10 @@ body, html {
   text-align: center;
   border-radius: 20px;
   font-weight: bold;
+  transition: color  0.3s ease-in-out,background-color 0.3s ease-in-out;
 }
 
 .signup:hover {
-  transition: color  0.2s ease-in-out,background-color 0.2s ease-in-out;
   background-color: #ff7a85;
   color: white;
   cursor: pointer;
